@@ -15,7 +15,11 @@ const app = express()
 // middleware para log.
 app.use(morgan('dev'))
 
-app.use(session({'secret': '343ji43j4n3jn4jk3n'}))
+app.use(session({
+  'secret': '343ji43j4n3jn4jk3n',
+  resave: false,
+  saveUninitialized: true,
+}))
 
 // app.use(bodyParser.urlencoded({ extended: false }));  for <form>
 app.use(bodyParser.json())
