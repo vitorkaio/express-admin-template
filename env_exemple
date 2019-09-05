@@ -1,0 +1,11 @@
+NODE_ENV=development
+#NODE_ENV=production
+
+APP_DB_HOST=mongodb://localhost
+APP_DB_PORT=27017
+APP_DB_NAME=express-template
+#PP_DB_USER=
+#APP_DB_PASSWORD=
+APP_PORT=4005
+
+APP_AUTH_SECRET=
